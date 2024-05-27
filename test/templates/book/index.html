@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% set title = "Book List" %}
+{% block main %}
+<div class="card" style="width: 18rem;">
+    <img src="data:;base64,{{ book.photo }}" class="card-img-top"  alt="{{ book.title }} cover">
+    <div class="card-body">
+        <p class="card-text">
+Title: {{ book.title }}</p>
+        <p class="card-text">
+Description: {{ book.description }}</p>
+        <p class="card-text">
+Price: {{ book.author }}</p>
+        <p class="card-text">
+Author: {{ book.price }}</p>
+        <p class="card-text">
+ISBN: {{ book.isbn }}</p>
+
+    </div>
+  </div>
+{% endblock %}
